@@ -1,0 +1,7 @@
+cache
+artifacts
+coverage
+coverage.json
+node_modules
+dist
+build
