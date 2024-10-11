@@ -11,11 +11,11 @@ contract MyContractV2 is Initializable, UUPSUpgradeable, OwnableUpgradeable {
     function initialize(address initialOwner) public initializer {
         __Ownable_init(initialOwner);
         __UUPSUpgradeable_init();
-        value = 6897;
+        value = 0;
     }
 
-    function setValue(uint256 newValue) public onlyOwner {
-        value = newValue;
+    function setValue() public onlyOwner {
+        value = 6897;
     }
 
     function getValue() public view returns (uint256) {

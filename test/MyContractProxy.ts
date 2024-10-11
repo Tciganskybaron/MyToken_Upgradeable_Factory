@@ -116,7 +116,7 @@ describe("MyContract Proxy with UUPS Upgradeability", function () {
             // Проверяем, что новая функциональность в MyContractV2 доступна
             const newV2Value = BigInt(6897);
             await expect(
-                proxyAsV2.write.setValue([newV2Value], {
+                proxyAsV2.write.setValue({
                     account: owner.account.address,
                 })
             ).to.be.fulfilled;

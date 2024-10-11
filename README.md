@@ -1,7 +1,7 @@
 # Проект MyToken_Upgradeable_Factory
 
 MyContractProxyModule#MyContractV1 - 0xB4AB39cc01c5c0773497c126e56D10F749E04FF9
-MyContractProxyModule#MyContractV2 - 0x44E9612FAf2E1e30Bfa39578969D53a875c8A8Bd
+MyContractProxyModule#MyContractV2 - 0xBaC9AB6392FEAa1E100e1A6E30c8eC3a43B2f117
 MyContractProxyModule#MyContractProxy - 0xD908A89a48Bc3bAC1b2320D68910E2E76e776a4e
 
 ## Задание
@@ -82,7 +82,6 @@ npx hardhat node
 ```bash
 npx hardhat ignition deploy ignition/modules/MyToken.ts --network localhost
 npx hardhat ignition deploy ignition/modules/MyContractProxy.ts --network localhost
-npx hardhat ignition deploy ignition/modules/UpgradeContract.ts --network localhost
 ```
 
 ### Деплой контракта на Sepolia
