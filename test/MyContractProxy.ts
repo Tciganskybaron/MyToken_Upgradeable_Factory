@@ -51,7 +51,7 @@ describe("MyContract Proxy with UUPS Upgradeability", function () {
     }
 
     describe("Initialization", function () {
-        it.only("Should initialize MyContractV1 through proxy", async function () {
+        it("Should initialize MyContractV1 through proxy", async function () {
             const { proxyAsV1 } = await loadFixture(deployProxyFixture);
 
             // Проверяем, что начальное значение переменной value равно 0
@@ -61,7 +61,7 @@ describe("MyContract Proxy with UUPS Upgradeability", function () {
     });
 
     describe("Proxy interaction with MyContractV1", function () {
-        it.only("Should set and get the value correctly through proxy", async function () {
+        it("Should set and get the value correctly through proxy", async function () {
             const { proxyAsV1, owner } = await loadFixture(deployProxyFixture);
 
             // Устанавливаем новое значение через прокси
@@ -79,7 +79,7 @@ describe("MyContract Proxy with UUPS Upgradeability", function () {
     });
 
     describe("Upgrade to MyContractV2", function () {
-        it.only("Should upgrade proxy to MyContractV2 and retain state", async function () {
+        it("Should upgrade proxy to MyContractV2 and retain state", async function () {
             const { proxy, owner, proxyAsV1 } =
                 await loadFixture(deployProxyFixture);
 
@@ -126,7 +126,7 @@ describe("MyContract Proxy with UUPS Upgradeability", function () {
             expect(valueInV2).to.equal(newV2Value);
         });
 
-        it.only("Should only allow the owner to upgrade the contract", async function () {
+        it("Should only allow the owner to upgrade the contract", async function () {
             const { proxy, otherAccount } =
                 await loadFixture(deployProxyFixture);
 

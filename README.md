@@ -4,6 +4,8 @@ MyContractProxyModule#MyContractV1 - 0xB4AB39cc01c5c0773497c126e56D10F749E04FF9
 MyContractProxyModule#MyContractV2 - 0xBaC9AB6392FEAa1E100e1A6E30c8eC3a43B2f117
 MyContractProxyModule#MyContractProxy - 0xD908A89a48Bc3bAC1b2320D68910E2E76e776a4e
 
+MyFactoryTokenModule#Factory - 0xB48899f900E01C6e0Bb740BD6F9435e1893A0c20
+
 ## Задание
 
 Данный проект является результатом выполнения учебного задания по разработке и тестированию смарт-контрактов на Solidity с использованием фреймворка Hardhat. Основные этапы выполнения включали:
@@ -82,6 +84,7 @@ npx hardhat node
 ```bash
 npx hardhat ignition deploy ignition/modules/MyToken.ts --network localhost
 npx hardhat ignition deploy ignition/modules/MyContractProxy.ts --network localhost
+npx hardhat ignition deploy ignition/modules/MyFactoryToken.ts --network localhost
 ```
 
 ### Деплой контракта на Sepolia
